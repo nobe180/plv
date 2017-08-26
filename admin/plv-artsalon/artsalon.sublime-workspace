@@ -1,0 +1,364 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"li\tli"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/masato/Desktop/livehouse-chiba/index.php",
+			"settings":
+			{
+				"buffer_size": 5028,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/masato/Desktop/livehouse-chiba/prepros-6.config",
+			"settings":
+			{
+				"buffer_size": 5791,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"bound",
+				"List bound keys"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sassb",
+				"SassBeautify"
+			],
+			[
+				"set syntax",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/index.haml",
+		"//192.168.11.1/disk2_pt1/livehouse-chiba/index.php",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/fdsp.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/rentalsp.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/fd.haml",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/rental.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/sp.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/rental.haml",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/style.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/fd.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/news.haml",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/newssp.scss",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/news.scss",
+		"/C/Users/masato/Documents/Work/homepage/yoshimusic/sass/style.scss",
+		"/C/Users/masato/Documents/Work/homepage/yoshimusic/index.haml",
+		"/C/Users/masato/Desktop/yoshimusic/sass/style.scss",
+		"/C/Users/masato/Desktop/yoshimusic/index.haml",
+		"/C/Users/masato/Desktop/yoshimusic/css/style.css",
+		"/C/Users/masato/Desktop/yoshimusic/index.html",
+		"/C/Users/masato/Documents/Work/PLV/PPCArtsalon/css/style.css",
+		"/C/Users/masato/Desktop/yoshimusic/config.rb",
+		"/C/Users/masato/Desktop/yoshimusic/sass/style.css",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/css/style.css",
+		"/C/Users/masato/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/css/sp.css",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/news.html",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/index.html",
+		"/C/Users/masato/Documents/Work/PLV/PPCArtsalon/css/style2.css",
+		"//192.168.11.1/disk2_pt1/config.rb",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/config.rb",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/artsalon.sublime-project",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/options.rb",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/css/style2.css",
+		"/C/Users/masato/AppData/Roaming/Sublime Text 3/Packages/User/haml.sublime-build",
+		"/C/Users/masato/Documents/Work/PLV/Artsalon2/sass/style.sass"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"</p>",
+			"<p>",
+			"nclass",
+			"showwhen",
+			"left",
+			"meta",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"         ",
+			"  ",
+			".nav-trigger",
+			"nav-trigger",
+			"30px",
+			"3px",
+			"15px",
+			"3px",
+			"15px",
+			"mtrig-label",
+			"trigger",
+			"tfade"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/masato/Desktop/livehouse-chiba/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5028,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1512.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/masato/Desktop/livehouse-chiba/prepros-6.config",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Compass/Compass.sublime-build",
+	"project": "artsalon.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

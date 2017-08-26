@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#wrapper {
+	width: 100%;
+}
+
+table#list_table {
+	white-space: nowrap;
+	background: #ffffff;
+}
+
+table#list_table th {
+	color: #36F;
+}
+
+table#list_table tr:hover {
+	background: rgba(0, 211, 255, 0.8) !important;
+	cursor: default;
+}
+
+table#list_table td {
+	padding-right: 25px !important;
+}
+
+.birthday {
+	width: 30px !important;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.postal {
+	width: 50px !important;
+}
+
+.address {
+	width: 500px !important;
+}
+
+#popupContents th {
+    width: 150px;
+}
+
+
+
+
+
+.check_design input[type="checkbox"], 
+.check_design input[type="radio"] {
+  display: none !important;
+}
+
+.check_design {
+  cursor: pointer;
+  position: relative;
+}
+
+.check_design .lever {
+  color: #ccc;
+  font-weight: normal;
+  display: inline-block;
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.check_design .lever:before {
+   border-color: #ddd;
+}
+
+.check_design input[type="checkbox"]:checked + .lever, 
+.check_design input[type="radio"]:checked + .lever {
+   background: #5cb85c;
+   border-color:#5cb85c;
+   color: #fff;
+}
+
+.check_design input[type="checkbox"]:checked + .lever:before, 
+.check_design input[type="radio"]:checked + .lever:before {
+   left: 100%;
+   margin-left: -44px;
+   border-color: #fff;
+}
+
+
+
+.radio_box input[type="radio"]:checked + .lever {
+	background: #e67168;
+	border-color: #e67168;
+}
+
+.recess_box input[type="checkbox"]:checked + .lever {
+	background: #ffed00;
+	border-color: #ffed00;
+	color: #FF2D31;
+	font-weight:	bold;
+}

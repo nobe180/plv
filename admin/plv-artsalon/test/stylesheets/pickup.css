@@ -1,0 +1,58 @@
+/* ----------------- PPC Pick Up Live ----------------*/
+#pickup #pickup_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pickup #pickup_box div {
+  width: 20vw;
+  margin: 0 1vw;
+  border: 0.2vw solid #ffd018;
+  padding: 0.3vw;
+}
+#pickup #pickup_box div div {
+  border: .1vw solid #ffd018;
+  margin: 0;
+  width: 100%;
+}
+#pickup #pickup_box div div p {
+  background: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  line-height: 3vw;
+  padding: 0.5vw 1vw;
+}
+#pickup #pickup_box div div p img {
+  width: 100%;
+}
+#pickup #pickup_box div div p:nth-child(1) {
+  font-size: 2.5vw;
+  color: #ffd018;
+}
+#pickup #pickup_box div div p:nth-child(1) span {
+  font-size: 4vw;
+}
+#pickup #pickup_box div div p:nth-child(1) span:nth-child(1) {
+  display: block;
+  width: 5vw;
+  height: 0.1vw;
+  background: #ffd018;
+  transform: rotate(-45deg);
+}
+#pickup #pickup_box div div p:nth-child(2) {
+  font-size: 2vw;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.2vw;
+  padding: 0 1vw;
+}
+#pickup #pickup_box div div p:nth-child(2) span {
+  font-size: 1.5vw;
+}
+#pickup #pickup_box div div p:last-child {
+  padding: 0;
+  text-align: center;
+  font-size: 1.2vw;
+  cursor: default;
+  background: rgba(255, 208, 24, 0.5);
+}

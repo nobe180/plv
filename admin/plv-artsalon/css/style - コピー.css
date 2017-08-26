@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* リセット */
+html, body, h1, p, a, div, section{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* スクロール禁止 */
+html,body{
+    overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+a:hover{
+  animation:blink 0.7s ease-in-out infinite alternate;
+}
+
+/*背景*/
+body{
+  background-color:#000000;
+  color:#ffffff;
+}
+
+.wrap{
+  overflow-x: hidden;
+}
+
+/*top*/
+h1{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.top{
+  height:100vh;
+  width:100vw;
+  background:linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0)60%),url(../imgs/topimg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: blink 0.7s ease-in 1 alternate;
+}
+
+.title{
+  padding-top: 70px;
+  margin-left: 100px;
+  padding-left: 10px;
+  letter-spacing:10px;
+  border-left: solid 1px #ffffff;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.pink{
+  color: #fed7c6;
+}
+.blue{
+  color: #ced9ef;
+}
+.yellow{
+  color: #f5f5cf;
+}
+
+.large{
+  font-size:42px;
+}
+
+.midlarge{
+  font-size:30px;
+}
+
+#whatis{
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:20px;
+  position:absolute;
+  display:block;
+  line-height:30px;
+  width:50%;
+  height: 200px;
+  top: 90px;
+  right:50px;
+  font-size:16px;
+  font-family: "Mplus 1p";
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*ニュース*/
+
+.news{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(35, 65, 42, 1) 0%, rgba(62, 49, 30, 1)100%),url(../imgs/restraunt.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flexabove{
+  display:flex;
+  list-style: none;
+  width:90%;
+  height:200px;
+  overflow:hidden;
+}
+
+.flexabove li{
+  width:20%;
+  background-color:#6F3;
+}
+
+.flexabove li:nth-child(1){
+  font-size:36px;
+  width:40%;
+  background-color:rgb(0, 0, 0);
+  line-height: 180px;
+  text-align:center;
+}
+
+.flexabove li:nth-child(3){
+  width:40%;
+  background-color:#3FC;
+}
+
+.flexbelow{
+  display:flex;
+  list-style: none;
+  width:90%;
+  height:200px;
+  overflow:hidden;
+}
+
+.flexbelow li{
+  width:20%;
+  background-color:#6F3;
+}
+.flexbelow li:nth-child(2){
+  width:40%;
+  background-color:#3FC;
+}
+
+.newstitle{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.7;
+  font-size:26px;
+  font-family: "Mplus 1p";
+}
+
+.topics{
+  font-size:26px;
+  font-family: "Mplus 1p";
+}
+
+.ndetails{
+  display:none;
+  font-size:16px;
+  font-family: "Mplus 1p";
+}
+
+.topics:hover > .nabout{
+  display:none;
+}
+
+.topics:hover > .ndetails{
+  display:block;
+}
+
+.flexabove li{
+  opacity:0.7;
+  transition: opacity 0.3s ease-out;
+}
+
+.flexabove > li:hover{
+  opacity:1.0;
+}
+
+
+.flexbelow li{
+  opacity:0.7;
+  transition: opacity 0.3s ease-out;
+}
+
+.flexbelow > li:hover{
+  opacity:1.0;
+}
+
+.topics:nth-child(1):hover + .shownews1{
+  display:block;
+}
+
+.topics:nth-child(1):hover + .shownews1{
+  display:block;
+}
+
+.shownews1{
+  position:relative;
+  display:none;
+  background-color;#000;
+  width:90%;
+  height:200px;
+  z-index:2;
+}
+/*スケジュール*/
+
+.schedule{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(38, 26, 10, 1) 0%,rgba(0, 0, 0, 1)100%);
+  background-size: cover;
+}
+
+/*価格表*/
+
+.pricelist{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(44, 72, 92, 1) 0%,rgba(0, 0, 0, 1)100%);
+  background-size: cover;
+}
+
+.pflexcont{
+  display:flex;
+  height:430px;
+  margin:15px;
+  font-family: "Mplus 1p";
+}
+
+.pitemwrap:nth-child(1){
+  flex-grow:1;
+  background-color:rgba(0,0,0,0.5);
+  padding:10px;
+}
+
+.pitemwrap:nth-child(2){
+  display:flex;
+  flex-direction:column;
+  height:430px;
+  flex-grow:3;
+  font-family: "Mplus 1p";
+  font-size:16px;
+}
+
+.pcontents{
+  margin:4px;
+  background-color:rgba(0,0,0,0.6);
+}
+
+.pcontents:nth-child(1){
+  flex-grow:1;
+  background-color:rgba(26,154,105,0.6);
+}
+
+.pcontents:nth-child(2){
+  flex-grow:2;
+  background-color:rgba(174,138,73,0.6);
+}
+
+.pcontents:nth-child(3){
+  flex-grow:2;
+  background-color:rgba(186,186,186,0.6);
+}
+
+.pcontents:nth-child(4){
+  flex-grow:2;
+  background-color:rgba(195,169,30,0.6);
+}
+
+.pcontents:nth-child(5){
+  flex-grow:2;
+  background-color:rgba(164,72,204,0.6);
+}
+
+.mini{
+  font-size:11px;
+}
+
+.pricedetail{
+  display:flex;
+  list-style: none;
+  width:90%;
+  overflow:hidden;
+}
+
+.pricedetail li{
+  flex-grow:1;
+}
+
+/*常設機材*/
+
+.equipment{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(31, 63, 50, 1) 0%,rgba(0, 0, 0, 1)100%);
+  background-size: cover;
+}
+
+/*飲食物メニュー*/
+
+.fooddrink{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(63, 31, 31, 1) 0%,rgba(0, 0, 0, 1)100%);
+  background-size: cover;
+}
+
+/*問い合わせ*/
+
+.contact{
+  height:100vh;
+  width:100vw;
+  padding-top:10px;
+  background:linear-gradient(135deg, rgba(38, 31, 63, 1) 0%,rgba(0, 0, 0, 1)100%);
+  background-size: cover;
+}
+
+/*メニュー*/
+
+.navbar{
+  top: 70%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 150px;
+  z-index: 99;
+  position: fixed;
+  animation: blink 0.3s ease-in 1 alternate;
+}
+
+.navbar:hover{
+  top: 70%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 150px;
+  z-index: 99;
+  position: fixed;
+  animation: blink 0.3s ease-in 1 alternate;
+}
+
+.logo{
+  height:100%;
+  width:180px;
+  padding-top: 40px;
+  padding-left: 50px;
+  box-sizing:border-box;
+  display: inline-block;
+  float:left;
+  color: #ffffff;
+  font-family: 'Noto Sans', sans-serif;
+  background-color:rgba(11,55,100,0.5); 
+}
+
+.ppc{
+  font-size: 26px;
+  letter-spacing: 14px;
+  font-weight: bold;
+}
+
+.artsalon{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar ul{
+  display: inline-block;
+  padding-top: 30px;
+  font-size:16px;
+}
+
+.navbar li{
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  padding:15px;
+}
+
+a.menulink:active{
+  display: inline;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 3px;
+}
+
+a.menulink > span.english{
+  display: inline;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 3px;
+}
+
+a.menulink:hover > span.english{
+  display: none;
+}
+
+a.menulink > span.japanese{
+  display: none;
+  font-size:13px;
+  font-family: "Mplus 1p";
+}
+a.menulink:hover > span.japanese{
+  display: inline;
+}
+
+.navbar li + li:before{
+  content: '';
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #ffffff;
+  position: relative;
+  left: -20px;
+  top: -3px;
+}
+
+/*フッター*/
+.byplv{
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  z-index:100;
+  animation: blink 0.3s ease-in 1 alternate;
+}
+
+footer img{
+   width: auto;
+   max-height: 40px;
+}
+
+/*ページ遷移*/
+
+#top:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#news:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#schedule:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#pricelist:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#equipment:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#fooddrink:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+
+#contact:target{
+  animation:fade 0.8s ease-in-out 1 alternate;
+}
+/*アニメーション*/
+@keyframes blink{
+  0%{opacity:0;}
+  100%{opacity:1;}	
+}
+
+@keyframes fade{
+  0%{opacity:0;}
+  100%{opacity:1;}	
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+dl {
+	width: 100%;
+	display: table;
+    background: linear-gradient(to top, #f2f5f7 50%,  #ffffff 100%);
+}
+
+dt, dd {
+    padding: 10px 20px;
+	display: table-cell;
+}
+
+dt {
+    width: 200px;
+	vertical-align: middle;
+    background: #deedf7;
+    color: #36F;
+}
+
+.btn_box {
+    margin-top: 20px;
+}
+
+
+
+@media only screen and (max-device-width : 640px) {
+	dl {
+		display: block;
+	}
+	
+	dt {
+		width: auto;
+	}
+	
+	dt, dd {
+		padding: 10px 20px;
+		display: block;
+	} 
+	
+	dd input {
+		width: auto;
+	}
+}

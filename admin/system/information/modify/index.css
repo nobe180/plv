@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+form {
+	background: #ffffff;
+	box-shadow: 1px 1px 1px #eaeaea;
+	padding: 20px 14px;
+	box-sizing: border-box;
+}
+
+input {
+	padding: 5px 10px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+#title input {
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	padding: 15px 10px;
+	box-sizing: border-box;
+}
+
+.btn {
+    background: #00a0d2;
+    border-color: #0073aa;
+	width: auto;
+	display: inline;
+}
+
+.delete {
+    background: #ff0000;
+    border-color: #FF7F81;
+	color: #ffffff;
+
+}

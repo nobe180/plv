@@ -1,0 +1,82 @@
+#calender {
+  width: 100% !important;
+}
+#calender #month_select {
+  width: 100%;
+}
+#calender #month_select a {
+  border: none;
+}
+#calender #month_select .month_btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  border: 2px solid #0b3764;
+  background: #3D6398;
+  color: #ffffff;
+}
+#calender #month_select #month_before, #calender #month_select #month_after, #calender #month_select .this_month {
+  display: none;
+}
+#calender #month_select #next, #calender #month_select #prev, #calender #month_select #this {
+  display: block;
+}
+#calender #day_box {
+  display: none;
+}
+#calender .week_box {
+  width: 100%;
+  height: auto;
+  display: block !important;
+}
+#calender .week_box div {
+  width: 100% !important;
+  min-height: auto;
+}
+#calender .week_box .date {
+  font-size: 8vw;
+}
+#calender .week_box .sp_box {
+  float: right;
+  padding: 5px;
+  font-size: 4vw;
+  width: 70% !important;
+}
+#calender .week_box .live_title {
+  font-size: 4vw;
+  min-height: auto;
+}
+#calender .week_box .live_image {
+  display: none;
+}
+#calender .week_box .sp_detail {
+  font-size: 4.2vw;
+}
+#calender .week_box .sp_detail #closeImg {
+  display: none;
+}
+#calender .week_box .sp_detail table td {
+  color: #f64e21;
+  font-weight: bold;
+}
+#calender .week_box .sp_detail .memo {
+  font-size: 4vw;
+  margin-top: 4vh;
+}
+#calender .week_box:last-child div {
+  border-bottom: none;
+}
+#calender .day_name {
+  display: inline;
+}
+#calender .disp {
+  display: none;
+}
+#calender .on:hover {
+  background: none !important;
+}
+#calender .on:hover span {
+  display: none;
+}

@@ -1,0 +1,221 @@
+/* ----------------- PPC Plan-----------------*/
+#price {
+  position: relative;
+  background: url(../images/price_bg.png);
+  background-size: contain;
+}
+#price:before {
+  position: absolute;
+  content: "";
+  bottom: -30vh;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  background: url(../images/price_bg_bottom.png) no-repeat;
+  background-size: contain;
+}
+#price p {
+  text-align: center;
+  font-size: 1.8vw;
+  margin-bottom: 5vw;
+}
+#price #live_plan h2 {
+  text-align: center;
+  font-size: 4vw;
+}
+#price #live_plan div.plan_list {
+  width: 65vw;
+  margin: 0 auto;
+  position: relative;
+  height: 12vw;
+  padding: 1vw 1vw 1vw 11vw;
+}
+#price #live_plan div.plan_list p {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 1vw;
+  font-size: 1vw;
+  text-align: left;
+  box-sizing: border-box;
+}
+#price #live_plan div.plan_list .norma {
+  width: 17vw;
+  height: 15vw;
+  position: absolute;
+  background-size: cover;
+  left: -7vw;
+  top: -2vw;
+  z-index: 10;
+  transform: rotate(-8deg);
+}
+#price #live_plan div.plan_list .norma div {
+  color: #fcee21;
+  position: absolute;
+  font-weight: bold;
+}
+#price #live_plan div.plan_list .norma div:first-child {
+  background: #ffffff;
+  box-shadow: 1px 1px 3px #333333;
+  color: #000000;
+  width: 17vw;
+  font-size: 2vw;
+  padding: 0 1vw;
+  text-align: center;
+  top: 2vw;
+  left: 0;
+}
+#price #live_plan div.plan_list .norma div:last-child {
+  bottom: 10%;
+  left: 15%;
+  font-size: 4vw;
+  text-align: center;
+  line-height: 4vw;
+}
+#price #live_plan div.plan_list .norma div:last-child span {
+  font-size: 6vw;
+}
+#price #live_plan div.plan_list .service {
+  position: absolute;
+  right: 1.5vw;
+  top: 1.5vw;
+  font-weight: bold;
+  padding: 0.5vw;
+  text-align: center;
+  font-size: 0.8vw;
+  border-radius: 1vw;
+}
+#price #live_plan div.plan_list .service span {
+  display: block;
+  font-size: 1.2vw;
+}
+#price div.recommend {
+  width: 65vw;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2vw;
+  padding: 0.5vw 1vw 0.5vw 11vw;
+  margin-top: 1vw;
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 4vw;
+}
+#price div.recommend:before {
+  position: absolute;
+  content: "";
+  width: 10vw;
+  height: 5vw;
+  top: 0;
+  left: 0;
+  background: url("../images/recommend.png") no-repeat;
+  background-size: contain;
+}
+#price .p_1 {
+  background: linear-gradient(to right, #b62520 10%, #f66274 80%, #b62520 100%);
+}
+#price .p_1 .norma {
+  background: url("../images/live_plan_sec01.png");
+}
+#price .p_1 .service {
+  background: rgba(246, 98, 116, 0.8);
+}
+#price .p_2 {
+  background: linear-gradient(to right, #317920 10%, #b6d41e 80%, #317920 100%);
+}
+#price .p_2 .norma {
+  background: url("../images/live_plan_sec02.png");
+}
+#price .p_2 .service {
+  background: rgba(182, 212, 30, 0.8);
+}
+#price .p_3 {
+  background: linear-gradient(to right, #277c9c 10%, #1da2e5 80%, #277c9c 100%);
+}
+#price .p_3 .norma {
+  background: url("../images/live_plan_sec03.png");
+}
+#price .p_3 .service {
+  background: rgba(29, 162, 229, 0.8);
+}
+#price .p_4 {
+  background: linear-gradient(to right, #ff7500 10%, #f6d946 80%, #ff7500 100%);
+}
+#price .p_4 .norma {
+  background: url("../images/live_plan_sec04.png");
+}
+#price .p_4 .service {
+  background: rgba(246, 217, 70, 0.8);
+}
+#price #rental_plan h2 {
+  text-align: center;
+  font-size: 4vw;
+}
+#price #rental_plan .planbox {
+  display: flex;
+}
+#price #rental_plan div.rental_list {
+  width: 35vw;
+  margin: 0 auto;
+  position: relative;
+  height: 12vw;
+  padding: 1vw 1vw 1vw 5vw;
+}
+#price #rental_plan div.rental_list .rental {
+  width: 12vw;
+  height: 11vw;
+  position: absolute;
+  background-size: cover;
+  left: -7vw;
+  top: -2vw;
+  z-index: 10;
+  transform: rotate(-8deg);
+}
+#price #rental_plan div.rental_list .rental div {
+  width: 15vw;
+  color: #f5f5cf;
+  text-shadow: 1px 1px 3px #333333;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  top: 2vw;
+  left: -2vw;
+  font-size: 3vw;
+}
+#price #rental_plan div.rental_list p {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 1vw;
+  font-size: 1vw;
+  text-align: left;
+  box-sizing: border-box;
+}
+#price #rental_plan div.rental_list p span {
+  font-size: 2vw;
+  font-weight: bold;
+}
+#price #rental_plan .r_1 {
+  background: linear-gradient(to right, #7757a1 10%, #774679 80%, #7757a1 100%);
+}
+#price #rental_plan .r_1 .rental {
+  background: url("../images/rental_plan_sec01.png");
+}
+#price #rental_plan .r_2 {
+  background: linear-gradient(to right, #bca630 10%, #c9bf00 80%, #bca630 100%);
+}
+#price #rental_plan .r_2 .rental {
+  background: url("../images/rental_plan_sec02.png");
+}
+#price #rental_plan div.option {
+  width: 35vw;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2vw;
+  background: linear-gradient(to right, #009a50 10%, #00aa00 80%, #009a50 100%);
+  color: #ffffff;
+  padding: 1vw;
+  margin-top: 1vw;
+  text-align: center;
+  margin-bottom: 4vw;
+}
+#price #rental_plan div.option h3 {
+  font-size: 2vw;
+}

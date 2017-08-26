@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* ----------------- PCの魅力 -----------------*/
+#about {
+  position: relative;
+  background: url("../images/about_bg.png");
+  background-size: contain;
+}
+#about:before {
+  position: absolute;
+  content: "";
+  bottom: -30vh;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  background: url("../images/about_bg_bottom.png") no-repeat;
+  background-size: contain;
+}
+#about h1 {
+  font-size: 6.5vw;
+  margin-bottom: 2vw;
+}
+#about h1 span {
+  font-size: 5.5vw;
+}
+#about .txt_box {
+  width: 50%;
+  font-size: 1.2vw;
+  float: left;
+}
+#about .txt_box h2 {
+  color: #fcee21;
+  font-size: 4vw;
+}
+#about .txt_box h2 span {
+  font-size: 3vw;
+}
+#about .wrap .image {
+  float: left;
+  width: 50%;
+  text-align: right;
+  margin-bottom: 5vw;
+}
+#about .wrap .image img {
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+}
+#about .wrap .image:nth-of-type(3) {
+  text-align: left;
+}

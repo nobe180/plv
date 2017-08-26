@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* ----- Common -----*/
+* {
+	margin : 0;
+	padding : 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: lighter;
+	background:#f1f1f1;
+}
+
+body, input, select, textarea {
+	font-family: "Helvetica", "游ゴシック Medium", "Hiragino Kaku Gothic ProN", "メイリオ", "meiryo", "sans-serif";
+}
+
+/* -------  ヘッダー設定  ------- */
+header {
+	display: table-cell;
+	width: 280px;
+	box-sizing: border-box;
+	color: #ffffff;
+	padding: 1em;
+	background:#2D3639;
+}
+
+header h1 {
+	font-size:24px;
+	margin:0;
+	text-align:left;
+	color: #0073aa;
+	font-weight: lighter;
+}
+
+
+header h2{
+	font-size:20px;
+	margin:20px 0;
+	font-weight: lighter;
+}
+
+header ul{
+	list-style:none;
+}
+
+header ul li{
+	margin:2px 0;
+}
+
+header ul li a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header ul{
+	margin-bottom:20px;
+}
+
+header ul:nth-last-child{
+	margin-bottom:0;
+}
+
+
+
+.icon{
+	width:20px;
+	float:left;
+	margin:8px 8px 12px 0;
+}
+
+.icon img{
+	width:100%;
+}
+
+
+/* -------  コンテンツ設定  ------- */
+#wrapper {
+	display: table;
+	width: 100%;
+}
+
+#contents {
+	margin:0 auto;
+    background: #fff;
+	color:#777777;
+	box-sizing:border-box;
+    box-shadow:0 1px 3px rgba(0,0,0,.13);
+	width:720px;
+}
+
+#container {
+	display: table-cell;
+	width: 960px;
+	box-sizing: border-box;
+	padding:1em 20px;
+}
+
+#container h1{
+	margin:0;
+	text-align:left;
+	color:#000000;
+}
+
+#container article{
+	margin-top:40px;
+}
+
+
+/* --- コントロール --- */
+.controll{
+	position:fixed;
+	top:50px;
+	right:0;
+	width:200px;
+}
+
+.controll select{
+	width:100%;
+	padding:3px 5px;
+	margin:5px 0;
+}
+
+.controllBtn{
+	width:60px;
+	
+}
+
+.controllBtn input{
+	padding:3px 10px;
+	width:100%;
+	height:30px;
+}
+
+
+
+
+
+
+/* -------  共通Tag設定  ------- */
+
+input, select, textarea{
+	font-family:"helvetica", "hiragino kaku gothic pro", "Arial", "MS PGothic", "meiryo", "sans-serif";
+	font-size:1em;
+	width:100%;
+	box-sizing:border-box;
+	padding:0.5em;
+	background: #ffffff;
+}
+
+textarea{
+	
+}
+
+input{
+	
+}
+
+h2 input{
+	font-size:0.9em;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+th, td{
+	border:1px solid #000000;
+	box-sizing:border-box;
+}
+
+select{
+	width:300px;
+}
+
+
+/* -------  共通Class設定  ------- */
+
+.clearfix:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.btn{
+	background:#666666;
+	color:#ffffff;
+	display:block;
+	width:100%;
+	padding:3px 20px;
+}
+
+.addBtn{
+    background: #666666;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width:auto !important;
+}
+
+.midashi_btn {
+	background-color: #338AAF;
+	text-align: center;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+dl.title_box {
+	display: table;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+dl.title_box dt, dl.title_box dd {
+	display:table-cell;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+dl.title_box dt {
+	width: 50px;
+}
+
+dl.title_box dt input {
+	font-size: 20px;
+}
+
+dl.title_box dd input {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+dl.title_box dt:nth-of-type(2) {
+	background: #f7ea41;
+	color: #f00000;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	border: 0.5px solid #bdbdbd;
+}
+
+
+
+
+
+input.contents_title {
+	font-weight: bold;
+	font-size: 36px;
+}
+
+input.inner_title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.txt_right {
+	text-align: right;
+}
+
+.contents_data {
+	padding: 10px;
+	border: 3px solid #454545;
+	background: url('/program/images/material/counseling_bg.png');
+	margin-bottom: 50px;
+}
+
+.contents_data:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#company_table dl{
+	display:table;
+	width:100%;
+}
+
+#company_table dt, #company_table dd{
+	display:table-cell;
+	text-align:left;
+}
+
+#company_table dt{
+	width:120px;
+	font-weight:bold;
+	vertical-align:top;
+}
+
+#company_table dd textarea{
+	margin:0 !important;
+}
+

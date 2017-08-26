@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+#content {
+	margin-top: 20px;
+}
+
+#calendar{
+	max-width:900px;
+}
+
+#wrapper #content{
+    height:690px;
+    overflow:hidden;
+}
+
+.fc-view-container{
+	height:667px !important;
+}
+
+.fc-head .fc-mon, .fc-head .fc-tue, .fc-head .fc-wed, .fc-head .fc-thu, .fc-head .fc-fri{
+	color:#36F !important;
+}
+
+
+.fc-sun, .fc-mon, .fc-tue, .fc-wed, .fc-thu, .fc-fri, .fc-sat{
+	font-weight:bold;
+	color:#999 !important;
+	padding:10px !important;
+	box-sizing:border-box !important;
+}
+
+.fc-sun{
+	color:#f00 !important;
+}
+
+.fc-sat{
+	color:#396 !important;
+}
+
+.fc-content-skeleton table thead tr td{
+	height:100px;
+	cursor:pointer;
+}
+
+.fc-week{
+	height:100px !important;
+}
+
+.fc-content-skeleton tr td:hover{
+	background:rgba(255, 0, 0, 0.4);
+	
+}
+
+.fc-day-number {
+	position: relative;
+}
+
+.fc-day-number .true{
+	font-size:2em !important;
+	color:#09C;
+	position:absolute;
+	bottom:20px;
+	left:40%;
+}
+
+
+#popupContents {
+	width: 400px;
+	margin-left: -200px;
+	margin-bottom: 200px;
+}
+
+
+#popupContents th,
+#popupContents td {
+	padding: 0;
+	height: 30px;
+	text-align:center;
+	box-sizing: border-box;
+}
+
+#popupContents th {
+	width: 150px;
+	background: #deedf7;
+	color: #36F;
+}
+
+#popupContents td {
+	color: #ff9999;
+	font-weight: 700;
+}
+
+#popupContents p {
+	font-size: 14px;
+	text-align: left;
+}
+
+
+#set_btn {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#closeImg {
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+}
+
+
+
+.all_check input, 
+#popupContents td input {
+	display: none;
+}
+
+.all_check label, 
+#popupContents td label {
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 100%;
+	margin: 0;
+	height: 30px;
+	background: #eaeaea;
+	color: #555e64;
+	transition: .2s;
+	box-sizing: border-box;
+}
+
+.all_check label {
+	width: 60px;
+}
+
+#popupContents td label:after {
+	content: "";
+}
+
+#popupContents td label:last-of-type {
+	border-right: 0px;
+	border-radius: 0 3px 3px 0;
+}
+
+#popupContents td input[type="checkbox"]:checked + label {
+	background-color: #a1b91d;
+	color: #fff;
+}
+
+#popupContents td input[type="checkbox"]:checked + label:after {
+	content: "◎";
+}
+
+.all_check input[type="radio"]:checked + .switch-on {
+	background-color: #a1b91d;
+	color: #fff;
+}
+
+.all_check input[type="radio"]:checked + .switch-off {
+	background-color: #e67168;
+	color: #fff;
+}
+
+
+label.true {
+	background-color: #fd3538 !important;
+}
+
+
+@media only screen and (max-device-width : 640px) {
+	.fc-scroller {
+		overflow: visible !important;
+	}
+}

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* ----------------- ヘッダー設定-----------------*/
+header {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  color: #ffffff;
+  z-index: 30;
+}
+header img {
+  width: 100%;
+}
+header #menu_top {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 2vw;
+  left: 0;
+  font-size: 1.5vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+header #logo {
+  position: absolute;
+  text-align: center;
+  top: 10vw;
+  left: 50%;
+  line-height: 3vw;
+  margin-left: -15vw;
+  width: 30vw;
+  padding: 1.5vh 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+header #logo p {
+  font-size: 2vw;
+}
+header #logo p span {
+  font-size: 4vw;
+  color: #ffffff;
+}
+header #logo p span:first-child {
+  color: #fed7c6;
+}
+header #logo p span:nth-child(2) {
+  color: #ced9ef;
+}
+header #logo p span:nth-child(3) {
+  color: #f5f5cf;
+}
+header #logo p:last-child {
+  font-size: 2vw;
+}
+header #txt_box {
+  position: absolute;
+  top: 20vw;
+  left: 50%;
+  width: 50vw;
+  text-align: center;
+  margin-left: -25vw;
+  font-size: 1.2vw;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5vw 0;
+}
+header #txt_box h1 {
+  font-size: 3vw;
+  color: #fcee21;
+}
+header #menu_bottom {
+  display: flex;
+}
+header #menu_bottom a {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vw;
+  letter-spacing: 0.5vw;
+  height: 4vw;
+  line-height: 4vw;
+}
+header #menu_bottom a:first-child {
+  background: #4d4d4d;
+  border: 0.3vw solid #868600;
+}
+header #menu_bottom a:last-child {
+  background: #333333;
+  border: 0.3vw solid #4058a0;
+}
+header #menu_bottom div {
+  display: block;
+  width: 12vw;
+  margin-top: -2.4vw;
+}
+header #menu_bottom div img {
+  width: 100%;
+}
+
+@keyframes header_animation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ----------------- SP用 -----------------*/
+@media only screen and (max-device-width: 640px) {
+  header {
+    background: #666666;
+    width: 100%;
+    overflow: hidden;
+  }
+  header img {
+    width: auto;
+    position: absolute;
+  }
+  header #logo, header #txt_box {
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 200%;
+    margin: 0 auto;
+    width: 95%;
+    padding: 2% 0;
+  }
+  header #logo p, header #txt_box p {
+    font-size: 150%;
+  }
+  header #logo p span, header #txt_box p span {
+    font-size: 175%;
+  }
+  header #logo p:last-child, header #txt_box p:last-child {
+    font-size: 150%;
+  }
+  header #txt_box {
+    font-size: 100%;
+  }
+  header #txt_box h1 {
+    font-size: 150%;
+  }
+  header #menu_bottom {
+    display: block;
+  }
+  header #menu_bottom a {
+    width: 100%;
+    font-size: 150%;
+    height: 10vh;
+    line-height: 10vh;
+  }
+  header #menu_bottom div {
+    height: 10vh;
+    width: auto;
+    text-align: center;
+  }
+  header #menu_bottom div img {
+    width: auto;
+    height: 100%;
+    position: relative;
+  }
+  header #menu_top {
+    display: none;
+  }
+
+  nav {
+    display: none !important;
+  }
+}

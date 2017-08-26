@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+select:focus {
+	outline: none;
+	border: none;
+}
+
+.selector {
+	width:100%;
+	max-width: 900px;
+	border: none;
+	font-size: 1.2em;
+}
+
+.selector option {
+	padding: 5px 0.5em;
+	color: #0099FF;
+}
+
+#calendar{
+	max-width:900px;
+}
+
+#wrapper #content{
+    height:690px;
+    overflow:hidden;
+}
+
+.fc-view-container{
+	height:667px !important;
+}
+
+.fc-head .fc-mon, .fc-head .fc-tue, .fc-head .fc-wed, .fc-head .fc-thu, .fc-head .fc-fri {
+	color:#36F !important;
+}
+
+
+.fc-sun, .fc-mon, .fc-tue, .fc-wed, .fc-thu, .fc-fri, .fc-sat{
+	font-weight:bold;
+	color:#999 !important;
+	padding:10px !important;
+	box-sizing:border-box !important;
+}
+
+.fc-sun{
+	color:#f00 !important;
+}
+
+.fc-sat{
+	color:#396 !important;
+}
+
+.fc-content-skeleton table thead tr td{
+	height:100px;
+	cursor:pointer;
+}
+
+.fc-week{
+	height:100px !important;
+}
+
+.fc-content-skeleton tr td:hover{
+	background:rgba(255, 0, 0, 0.4);
+	
+}
+
+.fc-day-number {
+	position: relative;
+}
+
+.fc-day-number .true {
+	font-size:2em !important;
+	color:#09C;
+	position:absolute;
+	bottom:20px;
+	left:40%;
+}
+
+
+#popupContents {
+	width: 400px;
+	margin-left: -200px;
+	margin-bottom: 200px;
+}
+
+
+#popupContents th,
+#popupContents td {
+	padding: 0;
+	height: 30px;
+	text-align:center;
+	box-sizing: border-box;
+}
+
+#popupContents th {
+	width: 150px;
+	background: #deedf7;
+	color: #36F;
+}
+
+#popupContents td {
+	font-weight: bold;
+	padding: 12px 5px;
+	background: #eaeaea;
+	color: #555e64;
+}
+
+#popupContents p {
+	font-size: 14px;
+	text-align: left;
+	margin: 0;
+}
+
+#popupContents h2 {
+	margin-top: 0;
+}
+
+#cancel {
+	margin-top: 20px;
+	width: 100% !important;
+}
+
+#closeImg {
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+}

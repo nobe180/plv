@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+body {
+	box-sizing: border-box;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: lighter;
+	background: #f1f1f1;
+}
+
+body, input, select, textarea {
+	font-family: "Helvetica", "游ゴシック Medium", "Hiragino Kaku Gothic ProN", "メイリオ", "meiryo", "sans-serif";
+}
+
+h1 {
+	margin: 100px auto;
+	margin-bottom: 25px;
+	font-weight: lighter;
+	text-align: center;
+	color: #0073aa;
+}
+
+h1 a {
+	color: #0073aa;
+	cursor: pointer;
+}
+
+input {
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
+
+}
+
+.button input {
+	background: #666666;
+	color: #ffffff;
+}
+
+#contents {
+	display: table;
+	margin: 0 auto;
+    background: #fff;
+	color: #777777;
+	box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+	width: 720px;
+}
+
+.leftCts, .rightCts {
+	box-sizing: border-box;
+	padding: 25px;
+	display: table-cell;
+}
+
+.rightCts {
+	width:210px;
+	vertical-align:middle;
+}
+
+.leftCts {
+	background: #006699;
+	color: #ffffff;
+	width: 510px;
+	vertical-align: top;
+}
+
+.notice {
+	font-size: 0.8em !important;
+	color :#ff0000;
+}
+
+.txt_center {
+	text-align: center;
+}
+
+/* --------  アニメーション  -------- */
+@keyframes shake{
+    0% {transform:translate(0px,0); }
+    10% { transform: translate(10px,0); }
+    20% { transform: translate(-9px,0); }
+    30% { transform: translate(8px,0); }
+    40% { transform: translate(-7px,0); }
+    50% { transform: translate(6px,0); }
+    60% { transform: translate(-5px,0); }
+    70% { transform: translate(4px,0); }
+    80% { transform: translate(-3px,0); }
+    90% { transform: translate(2,0); }
+    100% { transform: translate(0,0); }
+}

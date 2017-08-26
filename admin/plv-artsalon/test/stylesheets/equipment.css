@@ -1,0 +1,138 @@
+/* ----------------- Equipment -----------------*/
+#equipment .inner_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  margin: 0 auto;
+}
+#equipment .inner_sec div {
+  width: 49%;
+}
+#equipment .inner_sec div img {
+  width: 100%;
+}
+#equipment .inner_sec #copy {
+  font-size: 5vw;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 6vw;
+}
+#equipment .inner_sec #copy span {
+  font-size: 3vw;
+}
+#equipment .inner_sec #copy span:first-child {
+  display: block;
+  height: 4vw;
+  font-size: 2vw;
+}
+#equipment div#comment {
+  margin: 5vw 0;
+  background: rgba(255, 208, 24, 0.5);
+  text-align: center;
+  position: relative;
+}
+#equipment div#comment div {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background: url("../images/comment_bg.png") no-repeat;
+  background-size: contain;
+}
+#equipment div#comment div:first-child {
+  top: 1vw;
+  left: 7vw;
+}
+#equipment div#comment div:nth-child(2) {
+  top: 1vw;
+  right: 7vw;
+  transform: scale(-1, 1);
+}
+#equipment div#comment div:nth-child(3) {
+  bottom: 1vw;
+  left: 7vw;
+  transform: scale(1, -1);
+}
+#equipment div#comment div:nth-child(4) {
+  bottom: 1vw;
+  right: 7vw;
+  transform: rotate(180deg);
+}
+#equipment div#comment h2 {
+  font-size: 3vw;
+}
+#equipment div#comment h2 span {
+  font-size: 1.5vw;
+}
+#equipment div#comment p {
+  padding: 2vw 0;
+  font-size: 1.1vw;
+}
+#equipment div#comment p span {
+  font-weight: bold;
+  margin-top: 2vw;
+  display: block;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+}
+#equipment div#comment p span span {
+  font-size: 1.2vw;
+  display: inline-block;
+}
+#equipment #stage, #equipment #equipment_ {
+  width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+#equipment #stage h2, #equipment #equipment_ h2 {
+  font-size: 3vw;
+  text-align: center;
+}
+#equipment #stage img, #equipment #equipment_ img {
+  width: 100%;
+}
+#equipment #equipment_ {
+  margin-bottom: 0;
+  text-align: center;
+}
+#equipment .equipment_list {
+  width: 75vw;
+  margin: 0 auto;
+  padding: 3vw 2vw;
+  border-bottom: 0.1vw solid #ffffff;
+}
+#equipment .equipment_list h2 {
+  font-size: 3vw;
+}
+#equipment .equipment_list .equipment_wrap {
+  display: flex;
+  justify-content: center;
+}
+#equipment .equipment_list .equipment_wrap div:nth-child(2) {
+  width: 30vw;
+}
+#equipment .equipment_list .equipment_wrap div:nth-child(2) img {
+  width: 100%;
+}
+#equipment .equipment_list .equipment_wrap .list_box {
+  width: 45vw;
+}
+#equipment .equipment_list .equipment_wrap .list_box .item {
+  display: flex;
+  width: 100%;
+}
+#equipment .equipment_list .equipment_wrap .list_box .item p {
+  width: 25%;
+}
+#equipment .equipment_list .equipment_wrap .list_box .item p:nth-child(2) {
+  width: 75%;
+  padding: 1vw 2vw;
+  font-size: 1.8vw;
+}
+#equipment .equipment_list .equipment_wrap .list_box .item p:nth-child(2) span {
+  cursor: default;
+}
+#equipment .equipment_list .equipment_wrap .list_box .item p img {
+  width: 100%;
+}

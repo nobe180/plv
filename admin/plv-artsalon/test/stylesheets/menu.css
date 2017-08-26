@@ -1,0 +1,40 @@
+/* ----------------- Menu -----------------*/
+nav {
+  height: 7vw;
+  position: fixed;
+  width: 100%;
+  top: -7vw;
+  z-index: 100;
+  background: url("../images/menu_bg.png");
+  background-size: contain;
+  color: #e4e3d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div:first-child {
+  height: 100%;
+}
+nav div:first-child img {
+  height: 100%;
+}
+nav div:nth-child(2) {
+  margin: 0 2.5vw;
+}
+nav div:last-child {
+  width: 15vw;
+}
+nav div:last-child img {
+  width: 100%;
+}
+
+#page_top {
+  width: 5vw;
+  position: fixed;
+  bottom: -5vw;
+  z-index: 100;
+  right: 3vw;
+}
+#page_top img {
+  width: 100%;
+}

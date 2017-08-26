@@ -1,0 +1,183 @@
+/* Scss Document */
+/* ----- Common -----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-datepicker-week-end,
+.ui-datepicker-week-end a.ui-state-default {
+  color: red;
+}
+
+body {
+  box-sizing: border-box;
+  background: #eeeeee;
+  position: relative;
+  font-family: "helvetica", "hiragino kaku gothic pro", "Arial", "MS PGothic", "meiryo", "sans-serif";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+body, input {
+  font-family: "helvetica", "hiragino kaku gothic pro", "Arial", "MS PGothic", "meiryo", "sans-serif";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+table {
+  border-collapse: collapse;
+  background: #ffffff;
+}
+table .just {
+  border-bottom: 1px solid #cccccc !important;
+}
+table th, table td {
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  width: 150px;
+}
+table th {
+  padding: 2px 0;
+  background: linear-gradient(to bottom, #cccccc 60%, #ffffff);
+  font-weight: lighter;
+  border-color: #000000;
+  border-bottom: none;
+}
+table td {
+  border-bottom: 1px dashed #94F3FF;
+  border-bottom: none;
+  border-top: none;
+  height: 10px;
+}
+table td:hover {
+  background: rgba(0, 0, 255, 0.4);
+}
+table td .txt {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10px;
+}
+table td .txt div {
+  background: url("../images/name.png") no-repeat left 5px top;
+  background-size: 14%;
+  text-align: left;
+  height: 25px;
+  padding-left: 35px;
+  font-size: 14px;
+}
+table td .txt div:nth-of-type(2) {
+  background: url("../images/telephone.png") no-repeat left 5px top;
+  background-size: 14%;
+}
+table td .txt div:nth-of-type(3) {
+  background: url("../images/clock.png") no-repeat left 5px top;
+  background-size: 14%;
+}
+table td .txt div:nth-of-type(4) {
+  background: url("../images/price.png") no-repeat left 5px top;
+  background-size: 14%;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.txt_right {
+  text-align: right;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+#control {
+  padding: 5px 10px;
+}
+
+.Btn, #fixedTerm {
+  padding: 2px 5px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  background: #6da8c5;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.today {
+  background: #7ccea1;
+}
+
+.onedDayTable {
+  float: left;
+}
+.onedDayTable:nth-of-type(1) th {
+  color: #ff0000;
+}
+.onedDayTable:nth-of-type(2) {
+  /*display: none;*/
+}
+.onedDayTable:nth-of-type(7) th {
+  color: #0000ff;
+}
+
+.dateSchedule th {
+  height: 25px;
+}
+
+.Schedule td {
+  position: relative;
+}
+.Schedule td .caption {
+  position: absolute;
+  top: -4px;
+  right: -40px;
+  display: none;
+  font-size: 12px;
+  padding: 0 5px;
+  background: #fc8889;
+  z-index: 10;
+}
+.Schedule td .caption:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -17px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 17px 9px 0;
+  border-color: transparent #fc8889 transparent transparent;
+  z-index: 10;
+}
+
+.timeDef {
+  float: left;
+  margin-top: 54px;
+}
+.timeDef th {
+  width: 25px;
+  height: 120px;
+  background: linear-gradient(to right, #cccccc 10%, #ffffff);
+  border-right: none;
+}
+.timeDef:nth-of-type(1) th {
+  background: linear-gradient(to left, #cccccc 10%, #ffffff);
+  border-left: none;
+}
+
+.datepicker {
+  background: none !important;
+  border: none;
+  color: #000000 !important;
+}

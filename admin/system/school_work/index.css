@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+#wrapper {
+	width: 100%;
+}
+
+table#list_table {
+	white-space: nowrap;
+	background: #ffffff;
+}
+
+table#list_table th {
+	color: #36F;
+}
+
+table#list_table tr:hover {
+	background: rgba(0, 211, 255, 0.8) !important;
+	cursor: default;
+}

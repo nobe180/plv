@@ -1,0 +1,148 @@
+html, body, h1, p, a, div, article {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Mplus 1p";
+  overflow-x: hidden;
+}
+
+.spo {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  -webkit-animation: pagetrans 0.7s ease infinite alternate;
+  animation: pagetrans 0.7s ease infinite alternate;
+}
+
+#news1 ul:first-child {
+  list-style: none;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 0 30vh 0;
+}
+#news1 ul:first-child li {
+  position: relative;
+  padding: 1vh 0 1vh 1vw;
+}
+#news1 ul:first-child li span {
+  font-size: 1.5vw;
+}
+#news1 ul:first-child li .nclass {
+  position: absolute;
+  bottom: 0;
+  right: 2vw;
+  font-size: 2vw;
+  font-weight: 200;
+}
+#news1 ul:first-child li:first-child {
+  font-size: 2vw;
+  padding: 0;
+}
+#news1 ul:first-child li:nth-child(odd) {
+  background-color: rgba(255, 60, 0, 0.6);
+}
+#news1 ul:first-child li:nth-child(even) {
+  background-color: rgba(0, 160, 255, 0.6);
+}
+
+#top:target {
+  -webkit-animation: pagetrans 0.8s ease-in-out 1;
+  animation: pagetrans 0.8s ease-in-out 1;
+}
+
+*:target {
+  -webkit-animation: pagetrans 0.8s ease-in-out 1;
+  animation: pagetrans 0.8s ease-in-out 1;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadel {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadel {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pagetrans {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pagetrans {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fueias {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fueias {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

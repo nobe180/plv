@@ -1,0 +1,368 @@
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#modal, #modalContens {
+  display: none;
+}
+
+#popupContents {
+  width: 60vw;
+  position: absolute;
+  top: 10vw;
+  left: 50%;
+  margin-left: -30vw;
+  z-index: 102;
+  padding: 1vw;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  color: #ffffff;
+}
+#popupContents p {
+  margin-top: 10px;
+  text-align: center;
+}
+#popupContents label input {
+  width: auto;
+}
+#popupContents table {
+  width: 100%;
+}
+#popupContents table th, #popupContents table td {
+  text-align: left;
+  border-bottom: 1px dotted #ffffff;
+}
+#popupContents table .live_image {
+  width: 30%;
+}
+#popupContents table .live_image img {
+  width: 100%;
+}
+#popupContents table .date_ {
+  font-size: 3vw;
+  font-weight: bold;
+}
+#popupContents table .size {
+  font-size: 1.5vw;
+}
+#popupContents table h3 {
+  font-size: 2.5vw;
+}
+#popupContents .memo {
+  padding-top: 2vw;
+}
+
+/* ----------------- PPC Schedule -----------------*/
+#schedule {
+  color: #ffffff;
+}
+#schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#schedule h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+#schedule h1 span {
+  font-size: 2.2vw;
+}
+#schedule #month_select {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  width: 60vw;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  border-top: 0.3vw solid #ffffff;
+  position: relative;
+  font-size: 1.2vw;
+}
+#schedule #month_select > div {
+  width: 100%;
+}
+#schedule #month_select > div:nth-of-type(2) {
+  width: 20%;
+}
+#schedule #month_select:before {
+  position: absolute;
+  content: "";
+  top: -0.8vw;
+  left: 0;
+  width: 100%;
+  border-top: 0.1vw solid #ffffff;
+}
+#schedule #month_select a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-right: 1px solid #ffffff;
+}
+#schedule #month_select #schedule_this {
+  display: none;
+}
+#schedule #month_select #schedule_next, #schedule #month_select #schedule_prev {
+  height: 15vw;
+  width: 5vw;
+  position: absolute;
+  top: 20vw;
+  left: -15vw;
+}
+#schedule #month_select #schedule_next a, #schedule #month_select #schedule_prev a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: none;
+  background: url("../images/arrow.png") no-repeat;
+  background-size: contain;
+}
+#schedule #month_select #schedule_next {
+  left: auto;
+  right: -15vw;
+  transform: scale(-1, 1);
+}
+#schedule #month_select #month_before {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: row-reverse;
+}
+#schedule #month_select #month_before div {
+  width: 100%;
+}
+#schedule #month_select #month_after {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: row;
+}
+#schedule #month_select #month_after div {
+  width: 100%;
+}
+#schedule #month_select #month_after div:last-child a {
+  border-right: none;
+}
+#schedule #month_select #month_after div:first-child a {
+  border-left: 1px solid #ffffff;
+}
+#schedule #month_select .this_month {
+  font-size: 3vw;
+  font-weight: bold;
+  width: 20vw;
+}
+#schedule #month_select .month_year {
+  display: block;
+  font-size: 1vw;
+}
+#schedule #calender {
+  width: 70vw;
+  margin: 0 auto;
+  position: relative;
+}
+#schedule #calender #day_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#schedule #calender #day_box div {
+  width: 14.2%;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+#schedule #calender #day_box div:last-child {
+  border-right: 1px solid #ffffff;
+}
+#schedule #calender .week_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 14vw;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+}
+#schedule #calender .week_box div {
+  width: 14.2%;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-right: none;
+  border-bottom: none;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  position: relative;
+}
+#schedule #calender .week_box div:last-child {
+  border-right: 1px solid #ffffff;
+}
+#schedule #calender .week_box div dl {
+  display: table;
+  width: 100%;
+}
+#schedule #calender .week_box div dl dt, #schedule #calender .week_box div dl dd {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#schedule #calender .week_box div dl dt {
+  width: 40%;
+}
+#schedule #calender .week_box div div {
+  width: 100%;
+  padding: 0;
+  border: none !important;
+  font-size: 0.8vw;
+}
+#schedule #calender .week_box div .space dl {
+  background: #596893;
+}
+#schedule #calender .week_box div .space dl dt {
+  background: #35477B;
+}
+#schedule #calender .week_box div .bar_time dl {
+  background: #bebe75;
+}
+#schedule #calender .week_box div .bar_time dl dt {
+  background: #979748;
+}
+#schedule #calender .week_box div .live dl {
+  background: #da706f;
+}
+#schedule #calender .week_box div .live dl dt {
+  background: #a94847;
+}
+#schedule #calender .week_box:last-child div {
+  border-bottom: 1px solid #ffffff;
+}
+#schedule #calender .day_name, #schedule #calender .sp_detail {
+  display: none;
+}
+#schedule #calender .disp {
+  display: block;
+}
+#schedule .today {
+  border: 5px solid #B99437 !important;
+  position: relative;
+  overflow: hidden;
+}
+#schedule .today:after {
+  position: absolute;
+  content: "TONIGHT";
+  color: #ffffff;
+  background: #0b3764;
+  padding: 0px 35px;
+  font-size: 10px;
+  top: 8px;
+  right: -35px;
+  transform: rotate(30deg);
+}
+#schedule .sun {
+  color: #de3636 !important;
+}
+#schedule .sat {
+  color: #4da0c0 !important;
+}
+#schedule .on {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 1s;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#schedule .on span {
+  display: none;
+  font-size: 1.5vw;
+  color: #666666;
+}
+#schedule .on:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#schedule .on:hover span {
+  display: block;
+  animation: fade 0.7s ease 1;
+}
+#schedule .on:hover .target_id {
+  display: none;
+}
+#schedule .live_title {
+  font-weight: bold;
+  text-align: center;
+}
+#schedule .live_image {
+  width: 100%;
+}
+#schedule .live_image img {
+  width: 100%;
+}
+#schedule .live_detail {
+  text-align: right;
+}
+#schedule .live_detail span {
+  font-weight: bold;
+}
+#schedule .txt_right {
+  text-align: right;
+}
+@keyframes bigEntrance {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.2;
+  }
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes bigEntranceR {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0.3);
+    opacity: 0.2;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

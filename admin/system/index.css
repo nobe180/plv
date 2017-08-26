@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* ----- Common -----*/
+* {
+	margin: 0;
+	padding: 0;
+}
+		
+body {
+	box-sizing: border-box;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: lighter;
+	background: #f1f1f1;
+}
+
+body, input, select, textarea {
+	font-family: "Helvetica", "游ゴシック Medium", "Hiragino Kaku Gothic ProN", "メイリオ", "meiryo", "sans-serif";
+}
+
+h1 {
+	margin: 100px auto;
+	margin-bottom: 25px;
+	font-weight: lighter;
+	text-align: center;
+	color: #0073aa;
+}
+
+h1 a {
+	color: #0073aa;
+	cursor: pointer;
+}
+
+h2 {
+	font-weight: lighter;
+	margin: 20px 0;
+}
+
+p {
+	margin-bottom: 0.8em;
+}
+
+a {
+	color: #ffffff;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+/* -------  共通Class設定  ------- */
+.clearfix:after {
+  content:"";
+  clear: both;
+  display :block;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.btn {
+	background: #666666;
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	padding: 3px 20px;
+}
+
+.txt_center {
+	text-align: center;
+}
+
+.txt_right {
+	text-align: right;
+}
+
+.image img {
+	width: 100%;
+}
+
+.notice{
+	font-size:0.8em !important;
+	color:#900000;
+}
+
+.notice:before{
+	content:"※ ";
+}
+
+.settled{
+	position:relative;
+}
+.settled:after{
+	position:absolute;
+	left:120px;
+	top:0;
+	content:"　済";
+	color:#990000;
+}
+
+.clearfix:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+.center{
+	text-align:center;
+}
+.txtRight{
+	text-align:right;
+}
+
+.weight {
+	font-weight: bold;
+}
+
+
+
+
+
+header {
+	float: left;
+	width: 280px;
+	height: 100vh;
+	box-sizing: border-box;
+	color: #ffffff;
+	padding: 1em;
+	position: fixed;
+	background: #2D3639;
+}
+
+header h1{
+	font-size:24px;
+	margin:0;
+	text-align:left;
+}
+
+header h2{
+	font-size:20px;
+	margin:20px 0;
+}
+
+header ul{
+	list-style:none;
+	margin-bottom:20px;
+}
+
+header ul:nth-last-child{
+	margin-bottom:0;
+}
+
+
+header ul li {
+	margin: 2px 0;
+	cursor: pointer;
+}
+
+.icon{
+	width: 20px;
+	float: left;
+	margin: 8px 8px 12px 0;
+}
+
+.icon img {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+#wrapper{
+	width:960px;
+}
+
+#contents {
+	margin:0 auto;
+    background: #fff;
+	color:#777777;
+	box-sizing:border-box;
+    box-shadow:0 1px 3px rgba(0,0,0,.13);
+	/*overflow:hidden;*/
+	width:720px;
+}
+
+#container{
+	width:100%;
+	box-sizing:border-box;
+	padding:1em 20px;
+	padding-left:300px;
+}
+
+#container h1{
+	margin:0;
+	text-align:left;
+	color:#000000;
+}
+
+#container article{
+	margin-top:40px;
+}
+
+.blinking span {
+	animation:blink 0.8s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+/* --- コントロール --- */
+.controll{
+	position:fixed;
+	top:50px;
+	right:0;
+	width:200px;
+}
+
+.controll select{
+	width:100%;
+	padding:3px 5px;
+	margin:5px 0;
+}
+
+.controllBtn{
+	width:60px;
+	
+}
+
+.controllBtn input{
+	padding:3px 10px;
+	width:100%;
+	height:30px;
+}
+
+#newSave{
+	display:none;
+}
+
+
+
+
+
+/* --------  ポップアップウィンドウ  -------- */
+#modal, #modalContens {
+	display: none;
+}
+
+#overlay {
+	display:none;
+	position:fixed;
+	z-index:100;
+	top:0;
+	width:100%;
+	height:100vh;
+	background:rgba(255, 255, 255, 0.6);
+}
+
+#popupContents input, #popupContents textarea {
+    box-sizing: border-box;
+    border: none;
+    padding: 3px 0;
+    width: 100%;
+}
+
+#popupContents label input {
+   width: auto;
+}
+
+#popupContents {
+	width: 1000px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left:-500px;
+	margin-bottom:200px;
+	z-index:102;
+	padding:1em 1.5em;
+	box-sizing:border-box;
+	background:#ffffff;
+	border-radius:10px;
+	border:2px solid #666666;
+    box-shadow:0 1px 3px rgba(0,0,0,.13);
+}
+
+#popupContents table{
+	width:100%;
+}
+
+#popupContents th,
+#popupContents td{
+	padding:5px 0.5em;
+	text-align:left;
+	font-weight:lighter;
+}
+
+#popupContents th{
+	width:250px;
+	background:#f0f0f0;
+}
+
+#popupContents td a{
+	color:#0066ff;
+}
+
+#popupContents p{
+	margin-top:10px;
+	text-align:center;
+}
+
+#popupContents p span{
+	cursor:pointer;
+}
+
+#popupContents h2 img{
+	position:absolute;
+	cursor:pointer;
+}
+
+#closeImg{
+	right:1em;
+}
+
+#saveImg, #saveImg_new{
+	right:65px;
+}
+
+#printImg{
+	right:105px;
+}
+
+#popupContents .btn {
+	width: auto;
+	display: inline-block;
+	border-radius: 3px;
+    color: #ffffff;
+	padding: 3px 20px;
+	font-size: 18px;
+    background: #00a0d2;
+    border-color: #0073aa;
+    box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+}
+
+
+
+
+
+
+
+/* --------  テーブルソート  -------- */
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp{
+    background-color:#8dbdd8 !important;
+}
+
+table.tablesorter thead tr .headerSortDown{
+    background-image:url("http://plv-music.com/images/material/desc.gif") !important;
+}
+
+table.tablesorter thead tr .headerSortUp{
+    background-image:url("http://plv-music.com/images/material/asc.gif") !important;
+}
+
+table.tablesorter thead tr .header{
+    background:#deedf7;
+	background-image:url("http://plv-music.com/images/material/bg.gif");
+    background-repeat:no-repeat;
+    background-position:center right;
+    cursor:pointer;
+}
+
+
+
+
+
+/* --------  アニメーション  -------- */
+@keyframes shake{
+    0% {transform:translate(0px,0); }
+    10% { transform: translate(10px,0); }
+    20% { transform: translate(-9px,0); }
+    30% { transform: translate(8px,0); }
+    40% { transform: translate(-7px,0); }
+    50% { transform: translate(6px,0); }
+    60% { transform: translate(-5px,0); }
+    70% { transform: translate(4px,0); }
+    80% { transform: translate(-3px,0); }
+    90% { transform: translate(2,0); }
+    100% { transform: translate(0,0); }
+}
+
+@keyframes bigEntrance{
+	0% {transform: scale(0.3); opacity: 0.2;}
+	30% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes bigEntranceR{
+	0% {transform: scale(1); opacity: 1;}
+	30% {transform: scale(0.3); opacity: 0.2;}
+}
+
+@keyframes blink{
+	0% {opacity:0.2;}
+	100% {opacity:1;}
+}
+
+@media print{
+	.non_print {display:none !important;}
+	#popupContents {box-shadow: none !important; border: none !important;  margin: 0 !important; left: 0 !important; top: 0 !important;}
+	#popupContents th {padding: 16px !important;}
+}
